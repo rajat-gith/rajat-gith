@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: black;
+}
+.index{
+    height:100vh;
+    overflow: hidden;
+}
+.main_content{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.particle_js,.home{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.home{
+    z-index: -1;   
+}
+.bio{
+    font-family: "poppins";
+}
+.roles{
+    font-family: "poppins";
+}
+.about p{
+    color: white;
+    font-family: "poppins";
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li a:hover{
+    color: aqua;
+}
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+.bio{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30vh;
+    color: white;
+}
+.roles{
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.about{
+    display: flex;
+    height: 90vh;
+    width: 70%;
+    margin: 20px;
+    background-color:hsla(120, 80%, 4%, 0.8);
+    align-items: center;
+    
+    justify-content: center;
+}
+.about_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info{
+    margin: 20px;
+    font-family: "poppins";
+    color:white;
+
+}
+.info span{
+    color:aqua;
+}
+.info p{
+    margin: 10px;
+    font-size: 1.3rem;
+}
+.contact a{
+    margin: 10px;
+    font-size: 25px;
+    color: white;
+}
+.contact a:hover{
+    color:aqua;
+}
+.contact a:active{
+    color:aqua;
+}
+.project{
+    display: flex;
+    height: 100vh;
+    font-family: "poppins";
+    color: white;
+    flex-direction:column;
+    align-items: center;
+}
+.projects_cards{
+    display: flex;
+    justify-content: space-between;
+}
+.project1{
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+.project2{
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+.project_img{
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image: linear-gradient(black, transparent);
+}
+.project_img:hover{
+    -webkit-mask-image:none;
+    mask-image: linear-gradient(black, transparent);
+}
+
+.project1 button{
+    background-color: aqua;
+    padding: 10px;
+    font-family: "poppins";
+    border-radius: 5px;
+    justify-content: center;
+}
+.project_title h2{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.skills{
+    font-family: "poppins";
+    margin:20px;
+}
+.skills li{
+    list-style: none;
+    color:white;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+}
+.section_1{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    width: 100%;
+}
+.web_development{
+    width: 50%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column; 
+}
+.web_development h3{
+    color: aqua;
+    display: block;
+    margin: auto;
+}
+.app_development h3{
+    color: aqua;
+    display: block;
+    margin: auto;
+}
+.app_development{
+    width: 50%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;;
+}
+.web_development li{
+    margin: 10px;
+    display: block;
+    padding: 10px;
+    font-size: larger;
+    background-color:#202024;
+    color: aqua;
+    justify-items: center;
+}
+.app_development li{
+    margin: 10px;
+    display: block;
+    padding: 10px;
+    font-size: larger;
+    background-color:#202024;
+    color: aqua;
+}
+.section_2{
+    display: flex;
+    width: 100%;
+    align-items:center;
+    justify-content:center;
+
+
+}
+.Tools{
+    width: 50%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.backend{
+    width: 50%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.Tools li{
+    margin: 10px;
+    display: block;
+    padding: 10px;
+    font-size: larger;
+    background-color:#202024;
+    color: aqua;
+    justify-items: center;
+}
+.Tools h3{
+    color: aqua;
+    display: block;
+    margin: auto;
+}
+.backend h3{
+    color: aqua;
+    display: block;
+    margin: auto;
+}
+
+.backend li{
+    margin: 10px;
+    display: block;
+    padding: 10px;
+    font-size: larger;
+    background-color:#202024;
+    color: aqua;
+}
+@media screen and (max-width: 1200px){ 
+    
+    .info{
+        margin: 20px;
+    }
+    .about img{
+        width: 60%;
+        height: auto;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        width:70%;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .main_content{
+        position: relative;
+        width: 100%;
+        display: flex;
+        height: 100vh;
+    }
+    .particle_js,.home{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .particle_js{
+        height: 100%;
+    }
+    .nav_ul a{
+        visibility: hidden;
+    }
+    .home{
+        z-index: -1;   
+    }
+    .project{
+        overflow: auto;
+    }
+    .info{
+        margin: auto;
+    }       
+    .projects_cards{
+        flex-direction: column;
+    }
+    .section_1{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+    }
+    .web_development{
+        width: 100%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column; 
+    }
+    .app_development{
+        width: 100%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;;
+    }
+    .section_2{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+    }
+    .Tools{
+        width: 100%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column; 
+    }
+    .backend{
+        width: 100%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;;
+    }
+}
+@media (max-width: 768px){
+    .info{
+        margin: 20px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+    .about img{
+        width: 60%;
+        height: auto;
+    }
+    .about p{
+        font-size: 0.9rem;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        width:70%;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .main_content{
+        position: relative;
+        width: 100%;
+        display: flex;
+        height: 100vh;
+    }
+    .particle_js,.home{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .particle_js{
+        height: 100%;
+    }
+    .home{
+        z-index: -1;   
+    }
+    .project{
+        overflow: auto;
+    }
+    .info{
+        margin: auto;
+    }       
+    .projects_cards{
+        flex-direction: column;
+    }
+    .section_1{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+    }
+    .web_development{
+        width: 100%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column; 
+    }
+    .app_development{
+        width: 100%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;;
+    }
+    .section_2{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+    }
+    .Tools{
+        width: 100%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column; 
+    }
+    .backend{
+        width: 100%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;;
+    }
+}
+@media (max-width: 480px){
+    .info{
+        margin: 20px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+    .about img{
+        width: 60%;
+        height: auto;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        width:70%;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+<<<<<<< HEAD
+    .about_section{
+        background: none;
+        background-repeat: repeat-y;
+    }
+=======
+>>>>>>> 0e24d640859eab596f899746db4e229acbcc130a
+    .main_content{
+        position: relative;
+        width: 100%;
+        display: flex;
+        height: 100vh;
+    }
+    .particle_js,.home{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .particle_js{
+        height: 100%;
+    }
+    .home{
+        z-index: -1;   
+    }
+    .project{
+        overflow: auto;
+    }
+    .info{
+        margin: auto;
+    }       
+<<<<<<< HEAD
+    .info p{
+        font-size: 0.7rem;
+    }
+=======
+>>>>>>> 0e24d640859eab596f899746db4e229acbcc130a
+    .projects_cards{
+        flex-direction: column;
+    }
+    .section_1{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+    }
+    .web_development{
+        width: 100%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column; 
+    }
+    .app_development{
+        width: 100%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;;
+    }
+    .section_2{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+    }
+    .Tools{
+        width: 100%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column; 
+    }
+    .backend{
+        width: 100%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;;
+    }
+}
