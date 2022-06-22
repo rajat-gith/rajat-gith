@@ -9,6 +9,7 @@
 body{
     height: 100vh;
     display: flex;
+    padding: 0;
     flex-direction: column;
     background: black;
 }
@@ -20,6 +21,8 @@ body{
     position: relative;
     width: 100%;
     height: 100vh;
+    
+    
 }
 .particle_js,.home{
     width: 100%;
@@ -29,18 +32,83 @@ body{
     left: 0;
 }
 .home{
+    background: black;
     z-index: -1;   
 }
-.bio{
+.bio h1{
     font-family: "poppins";
+    color: aqua;
 }
 .roles{
     font-family: "poppins";
 }
-.about p{
+.info p{
     color: white;
     font-family: "poppins";
+    font-size: 0.2rem;
 }
+
+/* Timeline Container */
+.timeline {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.timeline h3{
+    color:aqua;
+}
+/* Outer Layer with the timeline border */
+.outer {
+    border-left: 2px solid aqua;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Card container */
+.card {
+    display: flex;
+    width: 100%;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    background: #333;
+    color: gray;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+/* Information about the timeline */
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Title of the card */
+.title {
+    color: aqua;
+    position: relative;
+}
+
+/* Timeline dot  */
+.title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    left: -39px;
+    border: 3px solid aqua;
+}
+  
+
+
+
+
+
+
 
 .navbar {
     display: flex;
@@ -64,19 +132,14 @@ body{
 }
 .brand-title{
     animation: 0.3s ease-out 0s 1 slideindown;
+    opacity: 0;
 }
-@keyframes slideindown {
-    0% {
-      transform: translateY(-100%);
-    }
-    100% {
-      transform: translateY(0);
-    }
-}
+
 
 .brand-title {
     font-size: 1.5rem;
     margin: .5rem;
+    visibility: hidden;
 }
 
 .navbar-links {
@@ -134,27 +197,47 @@ body{
     color: white;
     justify-content: center;
 }
-
-.about{
+.about_section{
     display: flex;
-    height: 90vh;
-    width: 70%;
-    margin: 20px;
-    background-color:hsla(120, 80%, 4%, 0.8);
+    height: 100%;
+    flex-direction: row;
     align-items: center;
-    
     justify-content: center;
 }
-.about_section{
+.experience{
+    color:white;
+    width: 100%;
+}
+
+.info{
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.info{
-    margin: 20px;
+    margin: auto;
     font-family: "poppins";
     color:white;
-
+}
+.timeline{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-family: "poppins";
+    color:white;
+}
+.info h2 {
+    display: flex;
+    justify-content:center;
+}
+.contact_links{
+    display:flex;
+    justify-content: center;
 }
 .info span{
     color:aqua;
@@ -202,7 +285,9 @@ body{
     -webkit-mask-image: linear-gradient(black, transparent);
     mask-image: linear-gradient(black, transparent);
 }
-
+.project1{
+    animation: 1s ease-out 0s 1 slideindown;
+}
 .project1 button{
     background-color: aqua;
     padding: 10px;
@@ -221,6 +306,8 @@ body{
 .skills{
     font-family: "poppins";
     margin:20px;
+    height: 100%;
+    width: 100%;
 }
 .skills li{
     list-style: none;
@@ -229,12 +316,13 @@ body{
 .skills{
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 .section_1{
     display: flex;
     align-items:center;
     justify-content:center;
-    width: 100%;
+    width: 100vw;
 }
 .web_development{
     width: 50%;
@@ -246,20 +334,53 @@ body{
     color: aqua;
     display: block;
     margin: auto;
+    animation: 0.5s ease-out 0s 1 slideindown;
+}
+.web_development li{
+    animation-name:slidein;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    opacity: 1;
+    
+}
+.app_development li{
+    animation-name:slideinX;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    opacity: 1;
+
+}
+.Tools li{
+    animation-name:slidein;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    opacity: 1;
+}
+.backend li{
+    animation-name:slideinX;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    opacity: 1;
+
 }
 .app_development h3{
     color: aqua;
     display: block;
     margin: auto;
+    animation: 0.5s ease-out 0s 1 slideindown;
 }
 .app_development{
     width: 50%;
     margin: 20px;
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
 }
 .web_development li{
-    margin: 10px;
+    margin-top: 10px;
     display: block;
     padding: 10px;
     font-size: larger;
@@ -268,7 +389,7 @@ body{
     justify-items: center;
 }
 .app_development li{
-    margin: 10px;
+    margin-top: 10px;
     display: block;
     padding: 10px;
     font-size: larger;
@@ -297,7 +418,7 @@ body{
     flex-direction: column;
 }
 .Tools li{
-    margin: 10px;
+    margin-top: 10px;
     display: block;
     padding: 10px;
     font-size: larger;
@@ -309,22 +430,196 @@ body{
     color: aqua;
     display: block;
     margin: auto;
+    animation: 0.5s ease-out 0s 1 slideindown;
 }
 .backend h3{
     color: aqua;
     display: block;
     margin: auto;
+    animation: 0.5s ease-out 0s 1 slideindown;
 }
 
 .backend li{
-    margin: 10px;
+    margin-top: 10px;
     display: block;
     padding: 10px;
     font-size: larger;
     background-color:#202024;
     color: aqua;
 }
-@media screen and (max-width: 1200px){ 
+
+
+@media only screen and (max-width: 480px){
+    .info{
+        margin: 20px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .about_section{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        width:70%;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .about_section{
+        background: none;
+        background-repeat: repeat-y;
+    }
+    .main_content{
+        position: relative;
+        width: 100%;
+        display: flex;
+        height: 100vh;
+    }
+    .particle_js,.home{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .particle_js{
+        height: 100%;
+    }
+    .home{
+        z-index: -1;   
+    }
+    .project{
+        overflow: auto;
+    }
+    .info{
+        margin: auto;
+    }       
+    .info p{
+        font-size: 0.7rem;
+    }
+    .projects_cards{
+        flex-direction: column;
+    }
+    .section_1{
+        display: flex;
+        width: 100vh;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+    }
+    .web_development{
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+    }
+    .app_development{
+        width: 100%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;;
+    }
+    .section_2{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+    }
+    .Tools{
+        width: 100%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column; 
+    }
+    .backend{
+        width: 100%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;;
+    }
+    .skills{
+        padding:10px;
+    }
+}
+@media only screen and (max-width: 768px){
+    
+    .skills{
+        display: flex;
+        margin: 0;
+    }
+    .section_1{
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        width: 100%;
+    }
+    .web_development{
+        width: 50%;
+        display: flex;
+        flex-direction: column; 
+    }
+    .app_development{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .section_2{
+        display: flex;
+        width: 100%;
+        /* flex-direction: row; */
+    }
+    .about_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .Tools{
+        width: 50%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;  
+    }
+    .backend{
+        width: 50%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 1024px){ 
     
     .info{
         margin: 20px;
@@ -375,7 +670,6 @@ body{
     .section_1{
         display: flex;
         width: 100%;
-        flex-direction: column;
         align-items:center;
         justify-content:center;
     }
@@ -394,7 +688,6 @@ body{
     .section_2{
         display: flex;
         width: 100%;
-        flex-direction: column;
         align-items:center;
         justify-content:center;
     }
@@ -411,239 +704,29 @@ body{
         flex-direction: column;;
     }
 }
-@media (max-width: 768px){
-    .info{
-        margin: 20px;
+@keyframes slidein {
+    0% {
+        transform: translateX(-200%);
     }
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .toggle-button {
-        display: flex;
-    }
-
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .navbar-links ul li {
-        text-align: center;
-    }
-
-    .navbar-links ul li a {
-        padding: .5rem 1rem;
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
-    .about img{
-        width: 60%;
-        height: auto;
-    }
-    .about p{
-        font-size: 0.9rem;
-    }
-    .about{
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
-        width:70%;
-        padding: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-    .main_content{
-        position: relative;
-        width: 100%;
-        display: flex;
-        height: 100vh;
-    }
-    .particle_js,.home{
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    .particle_js{
-        height: 100%;
-    }
-    .home{
-        z-index: -1;   
-    }
-    .project{
-        overflow: auto;
-    }
-    .info{
-        margin: auto;
-    }       
-    .projects_cards{
-        flex-direction: column;
-    }
-    .section_1{
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        align-items:center;
-        justify-content:center;
-    }
-    .web_development{
-        width: 100%;
-        margin: 20px;
-        display: flex;
-        flex-direction: column; 
-    }
-    .app_development{
-        width: 100%;
-        margin: 20px;
-        display: flex;
-        flex-direction: column;;
-    }
-    .section_2{
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        align-items:center;
-        justify-content:center;
-    }
-    .Tools{
-        width: 100%;
-        margin: 20px;
-        display: flex;
-        flex-direction: column; 
-    }
-    .backend{
-        width: 100%;
-        margin: 20px;
-        display: flex;
-        flex-direction: column;;
+    100% {
+        transform: translateX(0);
     }
 }
-@media (max-width: 480px){
-    .info{
-        margin: 20px;
+@keyframes slideinX {
+    0% {
+        transform: translateX(+200%);
     }
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+    100% {
+        transform: translateX(0);
     }
-
-    .toggle-button {
-        display: flex;
+}
+@keyframes slideindown {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
     }
-
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .navbar-links ul li {
-        text-align: center;
-    }
-
-    .navbar-links ul li a {
-        padding: .5rem 1rem;
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
-    .about img{
-        width: 60%;
-        height: auto;
-    }
-    .about{
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
-        width:70%;
-        padding: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-    .about_section{
-        background: none;
-        background-repeat: repeat-y;
-    }
-    .main_content{
-        position: relative;
-        width: 100%;
-        display: flex;
-        height: 100vh;
-    }
-    .particle_js,.home{
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    .particle_js{
-        height: 100%;
-    }
-    .home{
-        z-index: -1;   
-    }
-    .project{
-        overflow: auto;
-    }
-    .info{
-        margin: auto;
-    }       
-    .info p{
-        font-size: 0.7rem;
-    }
-    .projects_cards{
-        flex-direction: column;
-    }
-    .section_1{
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        align-items:center;
-        justify-content:center;
-    }
-    .web_development{
-        width: 100%;
-        margin: 20px;
-        display: flex;
-        flex-direction: column; 
-    }
-    .app_development{
-        width: 100%;
-        margin: 20px;
-        display: flex;
-        flex-direction: column;;
-    }
-    .section_2{
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        align-items:center;
-        justify-content:center;
-    }
-    .Tools{
-        width: 100%;
-        margin: 20px;
-        display: flex;
-        flex-direction: column; 
-    }
-    .backend{
-        width: 100%;
-        margin: 20px;
-        display: flex;
-        flex-direction: column;;
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
     }
 }
