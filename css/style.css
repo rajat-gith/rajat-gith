@@ -487,12 +487,16 @@ body{
         display: none;
         width: 100%;
     }
-    .about_section{
+    .about{
         display: flex;
         height: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    .about_section{
+        width: 100%;
+        display: flex;
     }
     .navbar-links ul {
         width: 100%;
@@ -512,19 +516,6 @@ body{
     }
     .card{
         font-size: 0.7rem;
-    }
-    .about{
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
-        width:70%;
-        padding: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-    .about_section{
-        background: none;
-        background-repeat: repeat-y;
     }
     .main_content{
         position: relative;
