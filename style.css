@@ -55,17 +55,36 @@ body{
     flex-direction: column;
     
 }
+.about{
+    display: flex;
+    flex-direction: column;
+}
+.about_section h3{
+    display: flex;
+    justify-content: center;
+}
 .timeline h3{
+    margin-bottom: 20px;
     color:aqua;
 }
-/* Outer Layer with the timeline border */
+/* Outer Layer witX the timeline border */
 .outer {
     border-left: 2px solid aqua;
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-
+.contact{
+    display: flex;
+    flex-direction: column;
+    
+}
+.contact h3{
+    display: flex;
+    color:aqua;
+    color: aqua;
+    justify-content: center;
+}
 /* Card container */
 .card {
     display: flex;
@@ -74,6 +93,7 @@ body{
     padding: 10px;
     background: #333;
     color: gray;
+    font-size: 1rem;
     border-radius: 8px;
     max-width: 400px;
 }
@@ -488,6 +508,9 @@ body{
 
     .navbar-links.active {
         display: flex;
+    }
+    .card{
+        font-size: 0.7rem;
     }
     .about{
         display: flex;
