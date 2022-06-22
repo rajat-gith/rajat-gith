@@ -50,6 +50,29 @@ body{
     background-color: black;
     color: white;
 }
+#home{
+    animation: 0.3s ease-out 0s 1 slideindown;
+}
+#about{
+    animation: 0.5s ease-out 0s 1 slideindown;
+}
+#project{
+    animation: 0.7s ease-out 0s 1 slideindown;
+}
+#skills{
+    animation: 0.9s ease-out 0s 1 slideindown;
+}
+.brand-title{
+    animation: 0.3s ease-out 0s 1 slideindown;
+}
+@keyframes slideindown {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
 
 .brand-title {
     font-size: 1.5rem;
@@ -177,10 +200,6 @@ body{
 }
 .project_img{
     -webkit-mask-image: linear-gradient(black, transparent);
-    mask-image: linear-gradient(black, transparent);
-}
-.project_img:hover{
-    -webkit-mask-image:none;
     mask-image: linear-gradient(black, transparent);
 }
 
@@ -555,13 +574,10 @@ body{
         justify-content: center;
         align-items: center;
     }
-<<<<<<< HEAD
     .about_section{
         background: none;
         background-repeat: repeat-y;
     }
-=======
->>>>>>> 0e24d640859eab596f899746db4e229acbcc130a
     .main_content{
         position: relative;
         width: 100%;
@@ -586,12 +602,9 @@ body{
     .info{
         margin: auto;
     }       
-<<<<<<< HEAD
     .info p{
         font-size: 0.7rem;
     }
-=======
->>>>>>> 0e24d640859eab596f899746db4e229acbcc130a
     .projects_cards{
         flex-direction: column;
     }
