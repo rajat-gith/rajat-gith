@@ -161,12 +161,15 @@ body{
     color:aqua;
     margin:10px;
 }
-
+.timeline h3{
+    color: aqua;
+}
 .contact_links{
     text-align: center;
 }
 .contact h3{
     text-align: center;
+    color: aqua;
 }
 .contact_links i{
     size:30px;
@@ -187,7 +190,7 @@ body{
 
 /* Outer Layer with the timeline border */
 .outer {
-    border-left: 2px solid #333;
+    border-left: 2px solid aqua;
 }
 
 /* Card container */
@@ -227,7 +230,14 @@ body{
 .timeline h3{
     margin: 10px;
 }  
-
+.about_me span{
+    color:aqua;
+}
+.education span{
+    color:aqua;
+    border-bottom: 2px solid aqua;
+    margin-bottom:10px;
+}
 
 
 
@@ -678,4 +688,12 @@ body{
   100% {
     transform: scale(1);
   }
+}
+@keyframes grow_animate {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
 }
