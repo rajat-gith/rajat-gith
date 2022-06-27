@@ -8,33 +8,29 @@
 }
 body{
     height: 100vh;
-    display: flex;
     padding: 0;
-    flex-direction: column;
     background: black;
 }
-.index{
-    height:100vh;
-    overflow: hidden;
-}
+
 .main_content{
     position: relative;
+}
+.home{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-
-}
-.particle_js,.home{
-    width: 100%;
-    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
 }
-.home{
-    background: black;
-    z-index: -1;   
+.bio{
+    display: flex;
+    flex-direction: column;
+}
+.particles-js{
+    z-index:-1;
+    
 }
 .bio h1{
     font-family: "poppins"; 
@@ -52,6 +48,7 @@ body{
     background-color: black;
     color: white;
     margin: auto;
+    z-index: 1000;
 }
 #home{
     animation: 0.3s ease-out 0s 1 slideindown;
@@ -458,11 +455,7 @@ body{
 
 @media only screen and (max-width: 480px){
     
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
+    
     .toggle-button {
         display: flex;
     }
@@ -492,27 +485,12 @@ body{
         font-size: 0.7rem;
         animation: 0.5s ease-out 0s 1 slideindown;
     }
-    .main_content{
-        position: relative;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        height: 100%;
+
+    .particles-js{
+        transform: scale(1.2);
+        height: 700px;
     }
-    .particle_js,.home{
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    .particle_js{
-        height: 100%;
-    }
-    .home{
-        z-index: -1;   
-    }
+    
     .about{
         display: flex;
         flex-direction: column;
@@ -619,28 +597,12 @@ body{
     
     
     
-    .main_content{
-        position: relative;
-        width: 100%;
-        flex-direction: column;
-        display: flex;
-        height: 100vh;
-    }
-    .particle_js,.home{
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    .particle_js{
-        height: 100%;
-    }
+    
+    
     .nav_ul a{
         visibility: hidden;
     }
-    .home{
-        z-index: -1;   
-    }
+    
     .project{
         overflow: auto;
     }
