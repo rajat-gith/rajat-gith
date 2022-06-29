@@ -5,6 +5,7 @@ const input=document.querySelector('form');
 const btn=document.getElementById('send');
 const loader=document.getElementById('preloader');
 window.addEventListener("load",function(){
+  
   loader.style.display="none"
 })
 
