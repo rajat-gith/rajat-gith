@@ -281,49 +281,65 @@ body{
     background: #202024;
 }
 
+/*Project Section*/
 
 .project{
     display: flex;
-    height: 100vh;
-    font-family: "poppins";
-    color: white;
-    flex-direction:column;
+    max-width: 100%;
     align-items: center;
+    flex-direction: column;
 }
-.projects_cards{
+.section_1{
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    text-align: center;
 }
-.project1{
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
+.section_2{
+    display: flex;
+    width: 100%;
+}
 
-}
-.project2{
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-
-}
-.project_img{
-    
-    
-}
 .project1{
-    animation: 1s ease-out 0s 1 slideindown;
-}
-.project1 button{
-    background-color: aqua;
+    display: flex;
+    float: left;
+    flex-direction: column;
+    color: aqua;
+    margin: 10px;
     padding: 10px;
-    font-family: "poppins";
-    border-radius: 5px;
-    justify-content: center;
+    background-color: #202024;
+    align-items: center;
 }
-.project_title h2{
+
+.project2{
     display: flex;
-    justify-content: center;
+    float: left;
+    flex-direction: column;
+    color: aqua;
+    margin: 10px;
+    padding: 10px;
+    background-color: #202024;
+    align-items: center;
+}
+.project3{
+    display: flex;
+    float: left;
+    flex-direction: column;
+    color: aqua;
+    margin: 10px;
+    padding: 10px;
+    background-color: #202024;
+    align-items: center;
+}
+
+.project4{
+    display: flex;
+    float: left;
+    flex-direction: column;
+    color: aqua;
+    margin: 10px;
+    padding: 10px;
+    background-color: #202024;
+    align-items: center;
 }
 .button{
     display: flex;
@@ -487,6 +503,37 @@ body{
         padding: .5rem 1rem;
     }
 
+    .project1 img{
+        width: 70%;
+    }
+    .project2 img{
+        width: 70%;
+    }
+    .project3 img{
+        width: 70%;
+    }
+    .project4 img{
+        width: 70%;
+    }
+    .project1{
+        display: flex;
+        flex-direction: column;
+        float: none;
+    }
+    .project2{
+        flex: 1;
+        align-items: center;
+    }
+    
+    .project3{
+        display: flex;
+        flex-direction: column;
+        float: none;
+    }
+    .project4{
+        flex: 1;
+        align-items: center;
+    }
     .navbar-links.active {
         display: flex;
     }
@@ -500,23 +547,18 @@ body{
         height: 700px;
     }
     
+    
     .about{
         display: flex;
         flex-direction: column;
     }
 
-
-
-
-    .project{
-        overflow: auto;
-    }
-    
-    
-    
-    .projects_cards{
+    .project_cards{
+        display: flex;
         flex-direction: column;
     }
+
+    
     .section_1{
         display: flex;
         width: 100vh;
@@ -558,18 +600,45 @@ body{
         padding:10px;
     }
 }
-@media only screen and (max-width: 768px){
+@media only screen and (min-width: 480px) and (max-width: 768px){
     
     .skills{
         display: flex;
         margin: 0;
     }
-    .section_1{
-        display: flex;
-        align-items:center;
-        justify-content:center;
-        width: 100%;
+    .project1 img{
+        width: 70%;
     }
+    .project2 img{
+        width: 70%;
+    }
+    .project3 img{
+        width: 70%;
+    }
+    .project4 img{
+        width: 70%;
+    }
+    .project1{
+        width: 40%;
+        float: left;
+    }
+    .project2 p{
+        text-align: center;
+        font-size: smaller;
+    }
+    .project2{
+        width: 40%;
+        float: right;
+    }
+    .project3{
+        width: 40%;
+        float: left;
+    }
+    .project4{
+        width: 40%;
+        float: right;
+    }
+    
     .web_development{
         width: 50%;
         display: flex;
@@ -612,13 +681,7 @@ body{
         visibility: hidden;
     }
     
-    .project{
-        overflow: auto;
-    }
-          
-    .projects_cards{
-        flex-direction: column;
-    }
+    
     .section_1{
         display: flex;
         width: 100%;
