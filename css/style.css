@@ -9,7 +9,7 @@
 body{
     height: 100vh;
     padding: 0;
-    background: black;
+    
 }
 
 .preloader{
@@ -20,6 +20,8 @@ body{
 }
 .main_content{
     position: relative;
+    display: flex;
+    align-items: center;
 }
 .home{
     width: 100%;
@@ -29,14 +31,16 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    align-items: center;
+    z-index: 1000;
 }
 .bio{
     display: flex;
     flex-direction: column;
 }
 .particles-js{
-    z-index:1000;
+    z-index: -1;
+    background-color: #202024;
     
 }
 .bio h1{
@@ -46,13 +50,24 @@ body{
 .roles{
     font-family: "poppins";
 }
-
+.works{
+    display: flex;
+    justify-content: center;
+}
+.works button{
+    background-color: aqua;
+    padding:5px;
+    margin:10px;
+    border:2px solid aqua;
+    border-radius: 5px;
+    cursor:pointer;
+}
 
 .navbar {
     display: flex;
     position: relative;
     justify-content: center;
-    background-color: black;
+    background-color: #202024;
     color: white;
     margin: auto;
     z-index: 1000;
@@ -144,12 +159,19 @@ body{
     flex: 1;
     flex-direction: column;
     width: 100%;
-    background: rgba(0,0,0,0.8);
+    background-color: #202024;
     backdrop-filter: saturate(180%) blur(10px);
 }
 
 .about{
     display: flex;
+}
+.contact_button button{
+    background-color:aqua;
+    padding: 5px;
+    margin-top: 10px;
+    border: 2px solid aqua;
+    border-radius: 5px;
 }
 .information{
     color:white;
@@ -169,6 +191,10 @@ body{
 }
 .timeline h3{
     color: aqua;
+}
+.contact{
+    background-color: #202024;
+
 }
 .contact_links{
     text-align: center;
@@ -286,6 +312,10 @@ body{
 .project{
     display: flex;
     max-width: 100%;
+    background-color: #202024;
+    /* background: url("../assets/bg.svg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
     align-items: center;
     flex-direction: column;
 }
@@ -308,6 +338,28 @@ body{
     padding: 10px;
     background-color: #202024;
     align-items: center;
+    border: 5px solid #202024;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    
+    animation: 1s ease-out 0s 1 slideindown;
+}
+
+.project1:hover{
+    box-shadow: 2px 2px 20px 2px aqua;
+    transform:scale(1.1,1.1);
+}
+.project2:hover{
+    box-shadow: 2px 2px 20px 2px aqua;
+    transform:scale(1.1,1.1);
+}
+.project3:hover{
+    box-shadow: 2px 2px 20px 2px aqua;
+    transform:scale(1.1,1.1);
+}
+.project4:hover{
+    box-shadow: 2px 2px 20px 2px aqua;
+    transform:scale(1.1,1.1);
 }
 
 .project2{
@@ -319,6 +371,9 @@ body{
     padding: 10px;
     background-color: #202024;
     align-items: center;
+    border: 5px solid #202024;
+    border-radius: 1rem;
+    animation: 1s ease-out 0s 1 slideindown;
 }
 .project3{
     display: flex;
@@ -327,8 +382,11 @@ body{
     color: aqua;
     margin: 10px;
     padding: 10px;
+    border: 5px solid #202024;
+    border-radius: 1rem;
     background-color: #202024;
     align-items: center;
+    animation: 1s ease-out 0s 1 slideindown;
 }
 
 .project4{
@@ -340,17 +398,19 @@ body{
     padding: 10px;
     background-color: #202024;
     align-items: center;
+    border: 5px solid #202024;
+    border-radius: 1rem;
+    animation: 1s ease-out 0s 1 slideindown;
 }
-.button{
-    display: flex;
+.project1 i,.project2 i,.project3 i,.project4 i{
+    cursor: pointer;
+    padding: 5px;
+    font-size: 20px;
+    margin: 2px;
+    color: aqua;
     justify-content: center;
 }
-.skills{
-    font-family: "poppins";
-    margin:20px;
-    height: 100%;
-    width: 100%;
-}
+
 .skills li{
     list-style: none;
     color:white;
@@ -358,7 +418,9 @@ body{
 .skills{
     display: flex;
     flex-direction: column;
-    margin: 0;
+    font-family: "poppins";
+    background-color: #202024;
+    
 }
 .section_1{
     display: flex;
@@ -367,33 +429,55 @@ body{
     width: 100vw;
 }
 .web_development{
-    width: 50%;
+    width: 30%;
     margin: 20px;
     display: flex;
+    
     flex-direction: column; 
 }
-.web_development h3{
-    color: aqua;
+.domain_title{
+    width: 100%;
+    display: block;
+    color: black;
     display: block;
     margin: auto;
+    background-color:aqua;
+    border: 2px solid aqua;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
     animation: 0.5s ease-out 0s 1 slideindown;
 }
-.web_development,.Tools li{
+.web_development li,.Tools li{
     animation-name:slidein;
     animation-timing-function: ease-out;
     animation-delay: 0s;
     animation-duration: 1s;
     opacity: 1;
-    
+    border: 2px solid #202024;
+    border-radius:0px 0px 2px 2px;
+    display: block;
+    padding: 10px;
+    font-size: larger;
+    background-color:#202024;
+    color: aqua;
+    text-align: center;
+    justify-items: center;
 }
-.app_development,.backend li{
+.app_development li,.backend li{
     animation-name:slideinX;
     animation-timing-function: ease-out;
     animation-delay: 0s;
     animation-duration: 1s;
     opacity: 1;
-    
-
+    border: 2px solid #202024;
+    border-radius:0px 0px 2px 2px;
+    display: block;
+    padding: 10px;
+    font-size: larger;
+    text-align: center;
+    background-color:#202024;
+    color: aqua;
+    cursor: pointer;
 }
 
 .app_development h3{
@@ -403,27 +487,10 @@ body{
     animation: 0.5s ease-out 0s 1 slideindown;
 }
 .app_development{
-    width: 50%;
+    width: 30%;
     margin: 20px;
     display: flex;
     flex-direction: column;
-}
-.web_development li{
-    margin-top: 10px;
-    display: block;
-    padding: 10px;
-    font-size: larger;
-    background-color:#202024;
-    color: aqua;
-    justify-items: center;
-}
-.app_development li{
-    margin-top: 10px;
-    display: block;
-    padding: 10px;
-    font-size: larger;
-    background-color:#202024;
-    color: aqua;
 }
 .section_2{
     display: flex;
@@ -434,27 +501,19 @@ body{
 
 }
 .Tools{
-    width: 50%;
+    width: 30%;
     margin: 20px;
     display: flex;
     flex-direction: column;
     
 }
 .backend{
-    width: 50%;
+    width: 30%;
     margin: 20px;
     display: flex;
     flex-direction: column;
 }
-.Tools li{
-    margin-top: 10px;
-    display: block;
-    padding: 10px;
-    font-size: larger;
-    background-color:#202024;
-    color: aqua;
-    justify-items: center;
-}
+
 .Tools h3{
     color: aqua;
     display: block;
@@ -468,14 +527,6 @@ body{
     animation: 0.5s ease-out 0s 1 slideindown;
 }
 
-.backend li{
-    margin-top: 10px;
-    display: block;
-    padding: 10px;
-    font-size: larger;
-    background-color:#202024;
-    color: aqua;
-}
 
 
 @media only screen and (max-width: 480px){
@@ -501,8 +552,7 @@ body{
 
     .navbar-links ul li a {
         padding: .5rem 1rem;
-    }
-
+    }   
     .project1 img{
         width: 70%;
     }
@@ -519,10 +569,12 @@ body{
         display: flex;
         flex-direction: column;
         float: none;
+        text-align: center;
     }
     .project2{
         flex: 1;
         align-items: center;
+        text-align: center;
     }
     
     .project3{
@@ -596,9 +648,6 @@ body{
         display: flex;
         flex-direction: column;;
     }
-    .skills{
-        padding:10px;
-    }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px){
     
@@ -620,14 +669,17 @@ body{
     }
     .project1{
         width: 40%;
+        text-align: center;
         float: left;
     }
     .project2 p{
+        
         text-align: center;
         font-size: smaller;
     }
     .project2{
         width: 40%;
+        text-align: center;
         float: right;
     }
     .project3{
