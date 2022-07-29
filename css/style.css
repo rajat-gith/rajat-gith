@@ -9,7 +9,7 @@
 body{
     height: 100vh;
     padding: 0;
-    
+    background: #202024;
 }
 
 .preloader{
@@ -20,8 +20,6 @@ body{
 }
 .main_content{
     position: relative;
-    display: flex;
-    align-items: center;
 }
 .home{
     width: 100%;
@@ -31,16 +29,14 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    align-items: center;
-    z-index: 1000;
+    z-index: -1;
 }
 .bio{
     display: flex;
     flex-direction: column;
 }
 .particles-js{
-    z-index: -1;
-    background-color: #202024;
+    z-index:1000;
     
 }
 .bio h1{
@@ -50,9 +46,19 @@ body{
 .roles{
     font-family: "poppins";
 }
-.works{
+
+
+.navbar {
     display: flex;
+    position: relative;
     justify-content: center;
+    background-color: black;
+    color: white;
+    margin: auto;
+    z-index: 1000;
+}
+.works{
+    text-align: center;
 }
 .works button{
     background-color: aqua;
@@ -72,18 +78,7 @@ body{
     margin: auto;
     z-index: 1000;
 }
-#home{
-    animation: 0.3s ease-out 0s 1 slideindown;
-}
-#about{
-    animation: 0.5s ease-out 0s 1 slideindown;
-}
-#project{
-    animation: 0.7s ease-out 0s 1 slideindown;
-}
-#skills{
-    animation: 0.9s ease-out 0s 1 slideindown;
-}
+
 .brand-title{
     animation: 0.3s ease-out 0s 1 slideindown;
     opacity: 0;
@@ -92,6 +87,7 @@ body{
 
 .navbar-links {
     height: 100%;
+    animation: 0.5s ease-out 0s 1 slideindown;
 }
 
 .navbar-links ul {
@@ -159,7 +155,6 @@ body{
     flex: 1;
     flex-direction: column;
     width: 100%;
-    background-color: #202024;
     backdrop-filter: saturate(180%) blur(10px);
 }
 
