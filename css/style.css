@@ -1,27 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "poppins";
 }
-body{
+
+body {
     height: 100vh;
     padding: 0;
     background: #202024;
 }
 
-.preloader{
+.preloader {
     background: #101010 url(../assets/preloader.gif) no-repeat center;
     background-size: 7%;
     width: 100%;
     height: 100vh;
 }
-.main_content{
+
+.main_content {
     position: relative;
 }
-.home{
+
+.home {
     width: 100%;
     height: 100%;
     display: flex;
@@ -31,19 +34,23 @@ body{
     left: 0;
     z-index: -1;
 }
-.bio{
+
+.bio {
     display: flex;
     flex-direction: column;
 }
-.particles-js{
-    z-index:1000;
-    
+
+.particles-js {
+    z-index: 1000;
+
 }
-.bio h1{
-    font-family: "poppins"; 
+
+.bio h1 {
+    font-family: "poppins";
     color: aqua;
 }
-.roles{
+
+.roles {
     font-family: "poppins";
 }
 
@@ -57,19 +64,21 @@ body{
     margin: auto;
     z-index: 1000;
 }
-.works{
+
+.works {
     text-align: center;
-    z-index:2000;
+    z-index: 2000;
     position: relative;
 }
-.works button{
+
+.works button {
     background-color: aqua;
-    padding:5px;
-    margin:10px;
-    border:2px solid aqua;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid aqua;
     border-radius: 5px;
-    cursor:pointer;
-    
+    cursor: pointer;
+
 }
 
 .navbar {
@@ -82,7 +91,7 @@ body{
     z-index: 1000;
 }
 
-.brand-title{
+.brand-title {
     animation: 0.3s ease-out 0s 1 slideindown;
     opacity: 0;
 }
@@ -110,9 +119,10 @@ body{
     padding: 1rem;
 }
 
-.navbar-links li a:hover{
+.navbar-links li a:hover {
     color: aqua;
 }
+
 .toggle-button {
     position: absolute;
     top: .75rem;
@@ -132,7 +142,7 @@ body{
 }
 
 
-.bio{
+.bio {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -140,11 +150,13 @@ body{
     align-items: center;
     color: white;
 }
-.bio h1{
+
+.bio h1 {
     display: flex;
     text-align: center;
 }
-.roles{
+
+.roles {
     display: flex;
     color: white;
     justify-content: center;
@@ -153,7 +165,7 @@ body{
 /*about section*/
 
 
-.about_section{
+.about_section {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -161,57 +173,67 @@ body{
     backdrop-filter: saturate(180%) blur(10px);
 }
 
-.about{
+.about {
     display: flex;
 }
-.contact_button button{
-    background-color:aqua;
+
+.contact_button button {
+    background-color: aqua;
     padding: 5px;
     margin-top: 10px;
     border: 2px solid aqua;
     border-radius: 5px;
 }
-.information{
-    color:white;
+
+.information {
+    color: white;
     display: block;
     margin: 10px;
-    padding:20px
+    padding: 20px
 }
-.timeline{
+
+.timeline {
     display: block;
-    color:white;
-    margin:10px
+    color: white;
+    margin: 10px
 }
-.information h3{
+
+.information h3 {
     text-align: center;
-    color:aqua;
-    margin:10px;
+    color: aqua;
+    margin: 10px;
 }
-.timeline h3{
+
+.timeline h3 {
     color: aqua;
 }
-.contact{
+
+.contact {
     background-color: #202024;
 
 }
-.contact_links{
+
+.contact_links {
     text-align: center;
 }
-.contact h3{
+
+.contact h3 {
     text-align: center;
     color: aqua;
 }
-.contact_links i{
-    size:30px;
-    color:white;
+
+.contact_links i {
+    size: 30px;
+    color: white;
     margin: 10px;
 }
-.contact_links i:hover{
-    color:aqua
+
+.contact_links i:hover {
+    color: aqua
 }
 
 
-  /* Timeline Container */
+/* Timeline Container */
 .timeline {
     background: var(--primary-color);
     margin: 20px auto;
@@ -257,57 +279,64 @@ body{
     left: -39px;
     border: 3px solid aqua;
 }
-.timeline h3{
+
+.timeline h3 {
     margin: 10px;
-}  
-.about_me span{
-    color:aqua;
-}
-.education span{
-    color:aqua;
-    border-bottom: 2px solid aqua;
-    margin-bottom:10px;
 }
 
-.contact form{
+.about_me span {
+    color: aqua;
+}
+
+.education span {
+    color: aqua;
+    border-bottom: 2px solid aqua;
+    margin-bottom: 10px;
+}
+
+.contact form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.form input,textarea{
+
+.form input,
+textarea {
     display: block;
-    margin:20px;
+    margin: 20px;
     padding: 10px;
     width: 70%;
     background: #202024;
-    color:white;
-    border: 1px solid aqua; ;
+    color: white;
+    border: 1px solid aqua;
+    ;
 }
-.form button{
+
+.form button {
     display: block;
-    margin:20px;
+    margin: 20px;
     float: right;
     padding: 10px;
     width: 60px;
     background: #202024;
-    color:white;
+    color: white;
     cursor: pointer;
-    border:1px solid aqua;
+    border: 1px solid aqua;
     border-radius: 50px;
     text-align: center;
 }
 
-.form input:focus{
+.form input:focus {
     background: #202024;
 }
 
-.form input:visited{
+.form input:visited {
     background: #202024;
 }
 
 /*Project Section*/
 
-.project{
+.project {
     display: flex;
     max-width: 100%;
     background-color: #202024;
@@ -317,17 +346,19 @@ body{
     align-items: center;
     flex-direction: column;
 }
-.section_1{
+
+.section_1 {
     display: flex;
     width: 100%;
     text-align: center;
 }
-.section_2{
+
+.section_2 {
     display: flex;
     width: 100%;
 }
 
-.project1{
+.project1 {
     display: flex;
     float: left;
     flex-direction: column;
@@ -339,28 +370,36 @@ body{
     border: 5px solid #202024;
     border-radius: 1rem;
     backdrop-filter: blur(10px);
-    
+
     animation: 1s ease-out 0s 1 slideindown;
 }
 
-.project1:hover{
-    box-shadow: 2px 2px 20px 2px aqua;
-    transform:scale(1.1,1.1);
-}
-.project2:hover{
-    box-shadow: 2px 2px 20px 2px aqua;
-    transform:scale(1.1,1.1);
-}
-.project3:hover{
-    box-shadow: 2px 2px 20px 2px aqua;
-    transform:scale(1.1,1.1);
-}
-.project4:hover{
-    box-shadow: 2px 2px 20px 2px aqua;
-    transform:scale(1.1,1.1);
+.project1 > a > img,.project2 > a > img {
+    object-fit: contain;
+    width: 90%;
 }
 
-.project2{
+.project1:hover {
+    box-shadow: 2px 2px 20px 2px aqua;
+    transform: scale(1.1, 1.1);
+}
+
+.project2:hover {
+    box-shadow: 2px 2px 20px 2px aqua;
+    transform: scale(1.1, 1.1);
+}
+
+.project3:hover {
+    box-shadow: 2px 2px 20px 2px aqua;
+    transform: scale(1.1, 1.1);
+}
+
+.project4:hover {
+    box-shadow: 2px 2px 20px 2px aqua;
+    transform: scale(1.1, 1.1);
+}
+
+.project2 {
     display: flex;
     float: left;
     flex-direction: column;
@@ -373,34 +412,12 @@ body{
     border-radius: 1rem;
     animation: 1s ease-out 0s 1 slideindown;
 }
-.project3{
-    display: flex;
-    float: left;
-    flex-direction: column;
-    color: aqua;
-    margin: 10px;
-    padding: 10px;
-    border: 5px solid #202024;
-    border-radius: 1rem;
-    background-color: #202024;
-    align-items: center;
-    animation: 1s ease-out 0s 1 slideindown;
-}
 
-.project4{
-    display: flex;
-    float: left;
-    flex-direction: column;
-    color: aqua;
-    margin: 10px;
-    padding: 10px;
-    background-color: #202024;
-    align-items: center;
-    border: 5px solid #202024;
-    border-radius: 1rem;
-    animation: 1s ease-out 0s 1 slideindown;
-}
-.project1 i,.project2 i,.project3 i,.project4 i{
+
+.project1 i,
+.project2 i,
+.project3 i,
+.project4 i {
     cursor: pointer;
     padding: 5px;
     font-size: 20px;
@@ -409,116 +426,129 @@ body{
     justify-content: center;
 }
 
-.skills li{
+.skills li {
     list-style: none;
-    color:white;
+    color: white;
 }
-.skills{
+
+.skills {
     display: flex;
     flex-direction: column;
     font-family: "poppins";
     background-color: #202024;
-    
+
 }
-.section_1{
+
+.section_1 {
     display: flex;
-    align-items:center;
-    justify-content:center;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
 }
-.web_development{
+
+.web_development {
     width: 30%;
     margin: 20px;
     display: flex;
-    
-    flex-direction: column; 
+
+    flex-direction: column;
 }
-.domain_title{
+
+.domain_title {
     width: 100%;
     display: block;
     color: black;
     display: block;
     margin: auto;
-    background-color:aqua;
+    background-color: aqua;
     border: 2px solid aqua;
     text-align: center;
     border-radius: 10px 10px 0px 0px;
     animation: 0.5s ease-out 0s 1 slideindown;
 }
-.web_development li,.Tools li{
-    animation-name:slidein;
+
+.web_development li,
+.Tools li {
+    animation-name: slidein;
     animation-timing-function: ease-out;
     animation-delay: 0s;
     animation-duration: 1s;
     opacity: 1;
     border: 2px solid #202024;
-    border-radius:0px 0px 2px 2px;
+    border-radius: 0px 0px 2px 2px;
     display: block;
     padding: 10px;
     font-size: larger;
-    background-color:#202024;
+    background-color: #202024;
     color: aqua;
     text-align: center;
     justify-items: center;
 }
-.app_development li,.backend li{
-    animation-name:slideinX;
+
+.app_development li,
+.backend li {
+    animation-name: slideinX;
     animation-timing-function: ease-out;
     animation-delay: 0s;
     animation-duration: 1s;
     opacity: 1;
     border: 2px solid #202024;
-    border-radius:0px 0px 2px 2px;
+    border-radius: 0px 0px 2px 2px;
     display: block;
     padding: 10px;
     font-size: larger;
     text-align: center;
-    background-color:#202024;
+    background-color: #202024;
     color: aqua;
     cursor: pointer;
 }
 
-.app_development h3{
+.app_development h3 {
     color: aqua;
     display: block;
     margin: auto;
     animation: 0.5s ease-out 0s 1 slideindown;
 }
-.app_development{
+
+.app_development {
     width: 30%;
     margin: 20px;
     display: flex;
     flex-direction: column;
 }
-.section_2{
+
+.section_2 {
     display: flex;
     width: 100%;
-    align-items:center;
-    justify-content:center;
+    align-items: center;
+    justify-content: center;
 
 
 }
-.Tools{
+
+.Tools {
     width: 30%;
     margin: 20px;
     display: flex;
     flex-direction: column;
-    
+
 }
-.backend{
+
+.backend {
     width: 30%;
     margin: 20px;
     display: flex;
     flex-direction: column;
 }
 
-.Tools h3{
+.Tools h3 {
     color: aqua;
     display: block;
     margin: auto;
     animation: 0.5s ease-out 0s 1 slideindown;
 }
-.backend h3{
+
+.backend h3 {
     color: aqua;
     display: block;
     margin: auto;
@@ -527,9 +557,9 @@ body{
 
 
 
-@media only screen and (max-width: 480px){
-    
-    
+@media only screen and (max-width: 480px) {
+
+
     .toggle-button {
         display: flex;
     }
@@ -538,7 +568,7 @@ body{
         display: none;
         width: 100%;
     }
-    
+
     .navbar-links ul {
         width: 100%;
         flex-direction: column;
@@ -550,268 +580,316 @@ body{
 
     .navbar-links ul li a {
         padding: .5rem 1rem;
-    }   
-    .project1 img{
+    }
+
+    .project1 img {
         width: 70%;
     }
-    .project2 img{
+
+    .project2 img {
         width: 70%;
     }
-    .project3 img{
+
+    .project3 img {
         width: 70%;
     }
-    .project4 img{
+
+    .project4 img {
         width: 70%;
     }
-    .project1{
+
+    .project1 {
         display: flex;
         flex-direction: column;
         float: none;
         text-align: center;
     }
-    .project2{
+
+    .project2 {
         flex: 1;
         align-items: center;
         text-align: center;
     }
-    
-    .project3{
+
+    .project3 {
         display: flex;
         flex-direction: column;
         float: none;
     }
-    .project4{
+
+    .project4 {
         flex: 1;
         align-items: center;
     }
+
     .navbar-links.active {
         display: flex;
     }
-    .card{
+
+    .card {
         font-size: 0.7rem;
         animation: 0.5s ease-out 0s 1 slideindown;
     }
 
-    .particles-js{
+    .particles-js {
         transform: scale(1.2);
         height: 700px;
     }
-    
-    
-    .about{
+
+
+    .about {
         display: flex;
         flex-direction: column;
     }
 
-    .project_cards{
+    .project_cards {
         display: flex;
         flex-direction: column;
     }
 
-    
-    .section_1{
+
+    .section_1 {
         display: flex;
         width: 100vh;
         flex-direction: column;
-        align-items:center;
-        justify-content:center;
+        align-items: center;
+        justify-content: center;
     }
-    .web_development{
+
+    .web_development {
         width: 100%;
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
     }
-    .app_development{
+
+    .app_development {
         width: 100%;
         margin: 20px;
         display: flex;
-        flex-direction: column;;
+        flex-direction: column;
+        ;
     }
-    .section_2{
+
+    .section_2 {
         display: flex;
         width: 100%;
         flex-direction: column;
-        align-items:center;
-        justify-content:center;
+        align-items: center;
+        justify-content: center;
     }
-    .Tools{
+
+    .Tools {
         width: 100%;
         margin: 20px;
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
     }
-    .backend{
+
+    .backend {
         width: 100%;
         margin: 20px;
         display: flex;
-        flex-direction: column;;
+        flex-direction: column;
+        ;
     }
 }
-@media only screen and (min-width: 480px) and (max-width: 768px){
-    
-    .skills{
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+
+    .skills {
         display: flex;
         margin: 0;
     }
-    .project1 img{
+
+    .project1 img {
         width: 70%;
     }
-    .project2 img{
+
+    .project2 img {
         width: 70%;
     }
-    .project3 img{
+
+    .project3 img {
         width: 70%;
     }
-    .project4 img{
+
+    .project4 {
         width: 70%;
     }
-    .project1{
+
+    .project1 {
         width: 40%;
         text-align: center;
         float: left;
     }
-    .project2 p{
-        
+
+    .project2 p {
+
         text-align: center;
         font-size: smaller;
     }
-    .project2{
+
+    .project2 {
         width: 40%;
         text-align: center;
-        float: right;
+        /* float: right; */
     }
-    .project3{
+
+    .project3 {
         width: 40%;
         float: left;
     }
-    .project4{
+
+    .project4 {
         width: 40%;
         float: right;
     }
-    
-    .web_development{
-        width: 50%;
-        display: flex;
-        flex-direction: column; 
-    }
-    .app_development{
+
+    .web_development {
         width: 50%;
         display: flex;
         flex-direction: column;
     }
-    .section_2{
+
+    .app_development {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section_2 {
         display: flex;
         width: 100%;
         /* flex-direction: row; */
     }
-    .about_section{
+
+    .about_section {
         display: flex;
         flex-direction: column;
     }
-    .Tools{
+
+    .Tools {
         width: 50%;
         margin: 20px;
         display: flex;
-        flex-direction: column;  
+        flex-direction: column;
     }
-    .backend{
+
+    .backend {
         width: 50%;
         margin: 20px;
         display: flex;
         flex-direction: column;
     }
 }
-@media only screen and (max-width: 1024px){ 
-    
-    
-    
-    
-    
-    .nav_ul a{
+
+@media only screen and (max-width: 1024px) {
+
+
+
+
+
+    .nav_ul a {
         visibility: hidden;
     }
-    
-    
-    .section_1{
+
+
+    .section_1 {
         display: flex;
         width: 100%;
-        align-items:center;
-        justify-content:center;
+        align-items: center;
+        justify-content: center;
     }
-    .web_development{
+
+    .web_development {
         width: 100%;
         margin: 20px;
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
     }
-    .app_development{
+
+    .app_development {
         width: 100%;
         margin: 20px;
         display: flex;
-        flex-direction: column;;
+        flex-direction: column;
+        ;
     }
-    .section_2{
+
+    .section_2 {
         display: flex;
         width: 100%;
-        align-items:center;
-        justify-content:center;
+        align-items: center;
+        justify-content: center;
     }
-    .Tools{
-        width: 100%;
-        margin: 20px;
-        display: flex;
-        flex-direction: column; 
-    }
-    .backend{
+
+    .Tools {
         width: 100%;
         margin: 20px;
         display: flex;
-        flex-direction: column;;
+        flex-direction: column;
+    }
+
+    .backend {
+        width: 100%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        ;
     }
 }
+
 @keyframes slidein {
     0% {
         transform: translateX(-200%);
     }
+
     100% {
         transform: translateX(0);
     }
 }
+
 @keyframes slideinX {
     0% {
         transform: translateX(+200%);
     }
+
     100% {
         transform: translateX(0);
     }
 }
+
 @keyframes slideindown {
     0% {
-      transform: translateY(-100px);
-      opacity: 0;
+        transform: translateY(-100px);
+        opacity: 0;
     }
+
     100% {
-      transform: translateY(0px);
-      opacity: 1;
+        transform: translateY(0px);
+        opacity: 1;
     }
 }
+
 @keyframes nav-link-load {
-  0% {
-    transform: scale(0);
-  }
+    0% {
+        transform: scale(0);
+    }
 
-  90% {
-    transform: scale(1.1);
-  }
+    90% {
+        transform: scale(1.1);
+    }
 
-  100% {
-    transform: scale(1);
-  }
+    100% {
+        transform: scale(1);
+    }
 }
+
 @keyframes grow_animate {
     0% {
         transform: translateX(0%);
     }
+
     100% {
         transform: translateX(100%);
     }
