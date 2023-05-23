@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently working on **something**
 
-- 👯 I’m looking to collaborate on **Android App Development**
+- 👯 I’m looking to collaborate on **Full Stack Development**
 
 - 👨‍💻 All of my projects are available at [https://github.com/rajat-gith](https://github.com/rajat-gith)
 
