@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Rajat Kumar Nayak</h1>
 <h3 align="center">A passionate Full Stack Web-App developer from India</h3>
 
-- 🔭 I’m currently working on **something**
+- 🔭 I’m currently working on as **Summer Intern at eLitmus Evaluations Pvt.Ltd**
 
 - 👯 I’m looking to collaborate on **Full Stack Development**
 
