@@ -1,9 +1,9 @@
 <h1 align="center">Hi 👋, I'm Rajat Kumar Nayak</h1>
 <h3 align="center">A passionate Full Stack Web-App developer from India</h3>
 
-- 🔭 I’m currently working as **Summer Intern at eLitmus Evaluations Pvt.Ltd**
+- 🔭 I’m currently working as **Software Developer at NCompass Techstudio**
 
-- 👯 I’m looking to collaborate on **Full Stack Development**
+- 👯 I’m looking to collaborate on **Data Engineering and Full Stack Development**
 
 - 👨‍💻 All of my projects are available at [https://github.com/rajat-gith](https://github.com/rajat-gith)
 
